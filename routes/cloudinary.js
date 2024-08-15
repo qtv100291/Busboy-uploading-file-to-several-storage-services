@@ -26,13 +26,9 @@ router.post("/", async (req, res) => {
 
     const bb = busboy({ headers: req.headers });
 
-    bb.on(
-      "file",
-      async function (fieldname, file, filename, encoding, mimetype) {
-        console.log("file name: ", filename);
-        file.pipe(createUploader);
-      }
-    );
+    bb.on("file", async function (_, file, info) {
+      file.pipe(createUploader);
+    });
 
     req.pipe(bb);
   } catch (err) {
