@@ -28,7 +28,6 @@ router.post("/", async (req, res) => {
       });
     });
     bb.on("close", () => {
-      console.log("file uploaded");
       res.status(200).json({
         message: "Uploaded the file successfully",
         url: fileUrl, // make sure your bucket is set to public for all user

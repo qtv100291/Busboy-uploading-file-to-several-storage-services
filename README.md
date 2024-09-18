@@ -5,6 +5,7 @@
 
 - [Cloudinary](#i-cloudinary)
 - [Google Cloud](#ii-google-cloud)
+- [AWS](#iii-aws)
 
 <b>If you find this repository useful, please click star button to give me the motivation to keep this work up-to-date. Thanks so much. </b>
 
@@ -53,3 +54,20 @@
 
 5. Example code for Google Cloud, click [here](routes/googleCloud.js)
    <br/>
+
+## III. AWS
+
+1. Create an AWS account.
+
+2. At the upper right corner, access to `Security credentials`.
+<br/>
+<div align="center"><img src='images/aws_security.png'></div>
+<br/>
+
+3. In `Security credentials` section, click button `Create access key`, choose appropriate use case, then retrieve `Access key` and `Secret access key` and copy them to `.env` file under name `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+
+<br/>
+<div align="center"><img src='images/aws_key.png'></div>
+<br/>
+
+4. Example code for AWS, click [here](routes/aws.js).
